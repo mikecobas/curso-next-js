@@ -1,18 +1,19 @@
 import { DarkLayout } from "@/components/layouts/DarkLayout";
 import { MainLayout } from "@/components/layouts/MainLayout";
 import { ReactElement } from "react";
-import type {NextPageWithLayout} from './_app';
+import type {NextPageWithLayout} from '../_app';
 
-export default function Home(){
+export default function Pricing(){
   return (
     <>
       <div className={`description`}>
-        <a href="/about" target="_blank" rel="noopener noreferrer">
-          Ir a About
+        <h1>Pricing</h1>
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          Ir a Home
         </a>
         <p>
           Get started by editing&nbsp;
-          <code className={`code`}>pages/index.tsx</code>
+          <code className={`code`}>pages/pricing.tsx</code>
         </p>
         <div></div>
       </div>
@@ -20,7 +21,7 @@ export default function Home(){
   );
 }
 
-Home.getLayout = function getLayout(page: JSX.Element) {
+Pricing.getLayout = function getLayout(page: ReactElement) {
   return (
     <MainLayout>
       <DarkLayout>{page}</DarkLayout>

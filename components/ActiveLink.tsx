@@ -1,20 +1,20 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { CSSProperties } from "react";
 
-export interface ActiveLinkProps {
+interface ActiveLinkProps {
   text: string;
   href: string;
 }
-const style={
-  color:'#0070f3',
-  textDecoration:'underline'
-}
+const style: CSSProperties = {
+  color: "#0070f3",
+  textDecoration: "underline",
+};
 export const ActiveLink = ({ text, href }: ActiveLinkProps) => {
-
-  const {asPath} = useRouter();
+  const { asPath } = useRouter();
   return (
     <Link href={href} legacyBehavior>
-      <a style={asPath === href ? style : {}}>{text}</a>
+      <a style={asPath === href ? style : undefined}>{text}</a>
     </Link>
   );
 };

@@ -2,10 +2,11 @@ import Head from "next/head";
 import styles from "./MainLayout.module.css";
 import Navbar from "../Navbar";
 import { Inter } from "next/font/google";
+import { FC } from "react";
+import { PageProps } from "@/interfaces/global.interface";
 const inter = Inter({ subsets: ["latin"] });
 
-
-export const MainLayout = (props:any) => {
+export const MainLayout: FC<PageProps> = ({children}) => {
   return (
     <>
       <Head>
@@ -15,7 +16,7 @@ export const MainLayout = (props:any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className={`${styles.main} ${inter.className}`}>{props.children}</main>
+      <main className={`${styles.main} ${inter.className}`}>{children}</main>
     </>
   );
 };

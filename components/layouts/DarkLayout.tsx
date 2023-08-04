@@ -1,4 +1,7 @@
-export const DarkLayout = (props: any) => {
+import { PageProps } from "@/interfaces/global.interface";
+import { FC } from "react";
+
+export const DarkLayout:FC<PageProps> = ({children}) => {
   return (
     <div
       style={{
@@ -8,7 +11,7 @@ export const DarkLayout = (props: any) => {
       }}
     >
       <h3>Dark</h3>
-      {props.children}
+      {children}
     </div>
   );
 };

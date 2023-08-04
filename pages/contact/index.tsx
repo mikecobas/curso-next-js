@@ -1,10 +1,8 @@
-
-import React from "react";
 import { Inter } from "next/font/google";
 import { MainLayout } from "@/components/layouts/MainLayout";
 
 const inter = Inter({ subsets: ["latin"] });
-export default function about() {
+export default function contact() {
   return (
     <MainLayout>
       <h1>Contact Page</h1>
