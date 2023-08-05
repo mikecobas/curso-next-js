@@ -6,7 +6,7 @@ import { FC } from "react";
 import { PageProps } from "@/interfaces/global.interface";
 const inter = Inter({ subsets: ["latin"] });
 
-export const MainLayout: FC<PageProps> = ({children}) => {
+ const MainLayout: FC<PageProps> = ({children}) => {
   return (
     <>
       <Head>
@@ -20,3 +20,5 @@ export const MainLayout: FC<PageProps> = ({children}) => {
     </>
   );
 };
+
+export default MainLayout

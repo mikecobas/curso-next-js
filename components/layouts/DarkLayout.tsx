@@ -1,7 +1,7 @@
 import { PageProps } from "@/interfaces/global.interface";
 import { FC } from "react";
 
-export const DarkLayout:FC<PageProps> = ({children}) => {
+const DarkLayout:FC<PageProps> = ({children}) => {
   return (
     <div
       style={{
@@ -15,3 +15,6 @@ export const DarkLayout:FC<PageProps> = ({children}) => {
     </div>
   );
 };
+
+
+export default DarkLayout

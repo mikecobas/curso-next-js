@@ -10,7 +10,7 @@ const style: CSSProperties = {
   color: "#0070f3",
   textDecoration: "underline",
 };
-export const ActiveLink = ({ text, href }: ActiveLinkProps) => {
+ const ActiveLink = ({ text, href }: ActiveLinkProps) => {
   const { asPath } = useRouter();
   return (
     <Link href={href} legacyBehavior>
@@ -18,3 +18,6 @@ export const ActiveLink = ({ text, href }: ActiveLinkProps) => {
     </Link>
   );
 };
+
+
+export default ActiveLink
