@@ -1,5 +1,5 @@
-import { DarkLayout } from "@/components/layouts/DarkLayout";
-import { MainLayout } from "@/components/layouts/MainLayout";
+import  DarkLayout  from "@/components/layouts/DarkLayout";
+import  MainLayout  from "@/components/layouts/MainLayout";
 import { ReactElement } from "react";
 import type {NextPageWithLayout} from '../_app';
 
